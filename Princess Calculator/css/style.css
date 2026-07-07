@@ -1,0 +1,19 @@
+.number-key {
+    background-color:rgb(255, 192, 226);
+
+    color: rgb(248, 250, 211);
+    border: 5px solid #f881be;
+   
+    margin: 5px ;
+    height: 30px;
+    width :50px;
+    border-radius: 20px;
+}
+.operator-key{
+    background-color:rgb(255, 192, 226);
+    color:rgb(255, 254, 178);
+height: 30px;
+    width :50px;
+    border: 20px rgb(225, 171, 34);
+
+}

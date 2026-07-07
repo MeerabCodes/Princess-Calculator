@@ -1,25 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" type = "text/css">
-    
-    <title>Princess Calculator</title>
-</head>
-<body>
-    <header>
-        <h1>Princess Calculator</h1>
 
-    </header>
-    <main>
-        <section>
-            <p>Magical calculator awaits!</p>
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <!-- Search Engine Information -->
+    <title>Princess Scientific Calculator</title>
+
+    <meta
+        name="description"
+        content="A beautiful scientific calculator featuring advanced mathematical operations with a magical princess-inspired interface.">
+
+    <meta
+        name="author"
+        content="Meerab">
+
+    <meta
+        name="theme-color"
+        content="#F8C8DC">
+
+    <!-- Styles -->
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+</head>
+
+<body>
+
+    <main class="calculator-app">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="app-header">
+
+            <h1 class="app-title">
+                Princess Scientific Calculator
+            </h1>
+
+            <p class="app-subtitle">
+                Elegant. Magical. Powerful.
+            </p>
+
+        </header>
+
+        <!-- ================= CALCULATOR ================= -->
+
+        <section
+             class="calculator"
+            aria-labelledby="calculator-heading">
+
+            <h2
+                id="calculator-heading"
+                class="visually-hidden">
+
+                Scientific Calculator
+
+            </h2>
+
+
+           
+
+            <section
+                class="display-section"
+                aria-label="Calculator display">
+
+                <label
+                    class="visually-hidden"
+                    for="display">
+
+                    Calculator Display
+
+                </label>
+
+                <input
+                    id="display"
+                    class="display-screen"
+                    type="text"
+                    readonly
+                    autocomplete="off"
+                    aria-live="polite">
+
+            </section>
+
+            <!-- Keypad -->
+
+            <section
+                class="keypad"
+                aria-label="Calculator keypad">
+
+                <!-- Memory -->
+
+                <div class="button-row">
+
+                    <button type="button" class="memory-key" data-action="mc">MC</button>
+                    <button type="button" class="memory-key" data-action="mr">MR</button>
+                    <button type="button" class="memory-key" data-action="m-plus">M+</button>
+                    <button type="button" class="memory-key" data-action="m-minus">M−</button>
+                    <button type="button" class="memory-key" data-action="ms">MS</button>
+
+                </div>
+
+                <!-- Scientific -->
+
+                <div class="button-row">
+
+                    <button type="button" class="function-key" data-value="sin">sin</button>
+                    <button type="button" class="function-key" data-value="cos">cos</button>
+                    <button type="button" class="function-key" data-value="tan">tan</button>
+                    <button type="button" class="function-key" data-value="log">log</button>
+                    <button type="button" class="function-key" data-value="ln">ln</button>
+
+                </div>
+
+                <div class="button-row">
+
+                    <button type="button" class="function-key" data-value="√">√</button>
+                    <button type="button" class="function-key" data-value="x²">x²</button>
+                    <button type="button" class="function-key" data-value="x³">x³</button>
+                    <button type="button" class="function-key" data-value="xʸ">xʸ</button>
+                    <button type="button" class="function-key" data-value="!">!</button>
+
+                </div>
+
+                <!-- Controls -->
+
+                <div class="button-row">
+
+                    <button type="button" class="control-key" data-action="clear">AC</button>
+                    <button type="button" class="control-key" data-action="delete">⌫</button>
+                    <button type="button" class="operator-key" data-value="%">%</button>
+                    <button type="button" class="operator-key" data-value="(">(</button>
+                    <button type="button" class="operator-key" data-value=")">)</button>
+
+                </div>
+
+                <!-- Numbers -->
+
+                <div class="button-row">
+
+                    <button type="button" class="number-key" data-value="7">7</button>
+                    <button type="button" class="number-key" data-value="8">8</button>
+                    <button type="button" class="number-key" data-value="9">9</button>
+                    <button type="button" class="operator-key" data-value="/">÷</button>
+
+                </div>
+
+                <div class="button-row">
+
+                    <button type="button" class="number-key" data-value="4">4</button>
+                    <button type="button" class="number-key" data-value="5">5</button>
+                    <button type="button" class="number-key" data-value="6">6</button>
+                    <button type="button" class="operator-key" data-value="*">×</button>
+
+                </div>
+
+                <div class="button-row">
+
+                    <button type="button" class="number-key" data-value="1">1</button>
+                    <button type="button" class="number-key" data-value="2">2</button>
+                    <button type="button" class="number-key" data-value="3">3</button>
+                    <button type="button" class="operator-key" data-value="-">−</button>
+
+                </div>
+
+                <div class="button-row">
+
+                    <button type="button" class="number-key" data-value="0">0</button>
+                    <button type="button" class="number-key" data-value=".">.</button>
+                    <button type="button" class="function-key" data-value="π">π</button>
+                    <button type="button" class="operator-key" data-value="+">+</button>
+
+                </div>
+
+                <!-- Equals -->
+
+                <div class="button-row">
+
+                    <button
+                        type="button"
+                        class="equals-key"
+                        data-action="calculate">
+
+                        ♡
+
+                    </button>
+
+                </div>
+
+            </section>
+
         </section>
+
     </main>
-    <footer>
-        <p>&copy; 2026 Princess Calculator. All rights reserved.</p>
-    </footer>
-    <script src="js/main.js" ></script>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
