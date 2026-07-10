@@ -26,42 +26,40 @@
         content="#F8C8DC">
 
     <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link
         rel="stylesheet"
         href="css/style.css">
 </head>
 
 <body>
-
-    <main class="calculator-app">
-
-        <!-- ================= HEADER ================= -->
-
-        <header class="app-header">
+<header class="app-header">
 
             <h1 class="app-title">
-                Princess Scientific Calculator
+                <span class="princess-word">Princess</span> Scientific Calculator
             </h1>
 
-            <p class="app-subtitle">
-                Elegant. Magical. Powerful.
-            </p>
+            <h3 class="app-subtitle">
+                Elegant , Magical , Powerful
+            </h3>
 
         </header>
 
+    <main class="calculator-app">
+        
+
+        <!-- ================= HEADER ================= -->
+
+        
         <!-- ================= CALCULATOR ================= -->
 
         <section
              class="calculator"
             aria-labelledby="calculator-heading">
 
-            <h2
-                id="calculator-heading"
-                class="visually-hidden">
-
-                Scientific Calculator
-
-            </h2>
+            
 
 
            
@@ -74,7 +72,7 @@
                     class="visually-hidden"
                     for="display">
 
-                    Calculator Display
+                    
 
                 </label>
 
@@ -132,8 +130,8 @@
 
                 <div class="button-row">
 
-                    <button type="button" class="control-key" data-action="clear">AC</button>
-                    <button type="button" class="control-key" data-action="delete">⌫</button>
+                    <button type="button" class="ac-key" data-action="clear">AC</button>
+                    <button type="button" class="delete-key" data-action="delete">⌫</button>
                     <button type="button" class="operator-key" data-value="%">%</button>
                     <button type="button" class="operator-key" data-value="(">(</button>
                     <button type="button" class="operator-key" data-value=")">)</button>
